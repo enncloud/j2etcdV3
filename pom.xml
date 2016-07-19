@@ -72,7 +72,7 @@
                             <protoSourceRoot>${project.basedir}/src/main/proto</protoSourceRoot><!--TODO(setter): Move grpc plugin to /opt directory and add docker support
 -->
                             <grpcPlugin>
-                                    ${project.basedir}/../workspace/cpp/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
+                                    ${project.basedir}/plugin/protoc-gen-grpc-java
                             </grpcPlugin>
                         </configuration>
                         <goals>
