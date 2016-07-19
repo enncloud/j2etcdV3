@@ -18,6 +18,35 @@
             <artifactId>protobuf-java-format</artifactId>
             <version>1.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.protobuf.GoGoProtos</groupId>
+            <artifactId>GoGoProtos</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/Gogo.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.google.api</groupId>
+            <artifactId>google-api</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/google-api-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty</artifactId>
+            <version>0.15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>0.15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>0.15.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -43,7 +72,7 @@
                             <protoSourceRoot>${project.basedir}/src/main/proto</protoSourceRoot><!--TODO(setter): Move grpc plugin to /opt directory and add docker support
 -->
                             <grpcPlugin>
-                                    ${project.basedir}/../../github/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
+                                    ${project.basedir}/../workspace/cpp/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
                             </grpcPlugin>
                         </configuration>
                         <goals>
@@ -71,5 +100,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
