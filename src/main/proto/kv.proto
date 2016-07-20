@@ -1,6 +1,6 @@
 syntax = "proto3";
 package mvccpb;
-option java_package = "com.ennew.j2etcdV3.proto1.mvccpb";
+option java_package = "com.ennew.j2etcdV3.proto.mvccpb";
 import "gogoproto/gogo.proto";
 
 option (gogoproto.marshaler_all) = true;

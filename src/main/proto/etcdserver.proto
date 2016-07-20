@@ -1,6 +1,6 @@
 syntax = "proto2";
 package etcdserverpb;
-option java_package = "com.ennew.j2etcdV3.proto1.etcdserverpb";
+option java_package = "com.ennew.j2etcdV3.proto.etcdserverpb";
 import "gogoproto/gogo.proto";
 
 option (gogoproto.marshaler_all) = true;

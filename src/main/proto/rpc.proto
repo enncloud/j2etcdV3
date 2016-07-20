@@ -1,6 +1,6 @@
 syntax = "proto3";
 package etcdserverpb;
-option java_package = "com.ennew.j2etcdV3.proto1.etcdserverpb";
+option java_package = "com.ennew.j2etcdV3.proto.etcdserverpb";
 import "gogoproto/gogo.proto";
 import "kv.proto";
 import "auth.proto";
